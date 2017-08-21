@@ -1,0 +1,18 @@
+traceroute to 129.132.19.216 (129.132.19.216) from 216.234.191.172, 30 hops max, 40 byte packets
+ 1  cat6509-vlan2.edm.tera-byte.com (216.234.161.1)  0.535 ms
+ 2  *
+ 3  tcore3-edmonton_be1.net.bell.ca (64.230.119.232)  66.227 ms
+ 4  tcore3-calgaryqa_tengige0-15-0-9.net.bell.ca (64.230.77.107)  64.854 ms
+ 5  tcore3-calgaryqa_0-9-0-1.net.bell.ca (64.230.78.234)  65.805 ms
+ 6  tcore4-montreal01_1-4-0-0.net.bell.ca (64.230.79.41)  62.432 ms
+ 7  tcore3-newyorkaa_hundredgige0-3-0-0.net.bell.ca (64.230.79.136)  62.944 ms
+ 8  bx7-newyork83_hundredgige0-7-0-0.net.bell.ca (64.230.79.91)  60.767 ms
+ 9  *
+10  i68geb-005-ten0-1-0-1-7.bb.ip-plus.net (138.187.159.18)  150.912 ms
+11  i68cix-015-bun1.bb.ip-plus.net (138.187.129.65)  152.552 ms
+12  *
+13  swiCE1-B3.switch.ch (130.59.38.81)  152.175 ms
+14  swiZH1-100GE-0-1-0-1.switch.ch (130.59.36.94)  157.423 ms
+15  swiEZ3-100GE-0-1-0-4.switch.ch (130.59.38.109)  161.839 ms
+16  rou-gw-lee-tengig-to-switch.ethz.ch (192.33.92.1)  168.947 ms
+17  rou-fw-rz-rz-gw.ethz.ch (192.33.92.169)  155.734 ms

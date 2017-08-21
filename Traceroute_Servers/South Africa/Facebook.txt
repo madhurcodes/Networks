@@ -1,0 +1,17 @@
+traceroute to 31.13.75.36 (31.13.75.36), 30 hops max, 60 byte packets
+ 1  ge1.fw-hetzner-samrand.truteq.com (129.232.158.150) [AS37153]  0.169 ms  0.131 ms
+ 2  gw.hsr.truteq.com (129.232.159.193) [AS37153]  2.407 ms  2.402 ms
+ 3  core-access-switch1-v4001.jnb1.host-h.net (197.189.193.33) [AS37153]  5.813 ms  5.815 ms
+ 4  core-router2.jnb1.host-h.net (197.189.193.3) [AS37153]  0.369 ms  0.363 ms
+ 5  41-66-132-245-f5.customer.xe-0-0-2-gp-sm-dce-2.africainx.net (41.66.132.245) [AS37179]  0.352 ms  0.338 ms
+ 6  core.xe-0-0-0-gp-id-pbr-1.za.africainx.net (41.84.13.201) [AS29606]  1.682 ms  1.680 ms
+ 7  core.xe-1-1-0-nl-am-eqx-dce-1.nl.africainx.net (41.84.12.50) [AS29606]  182.284 ms  182.283 ms
+ 8  10-2-4.ear2.Amsterdam1.Level3.net (213.19.192.133) [AS3356]  182.492 ms  183.167 ms
+ 9  * *
+10  Telia-level3-100G.Amsterdam1.Level3.net (4.68.73.214) [AS3356]  174.093 ms  174.066 ms
+11  be2434.ccr41.ams03.atlas.cogentco.com (130.117.2.242) [AS174]  174.904 ms adm-bb3-link.telia.net (213.155.137.210) [AS1299]  175.131 ms
+12  prs-bb2-link.telia.net (213.155.137.159) [AS1299]  194.670 ms prs-bb3-link.telia.net (62.115.120.15) [AS1299]  179.472 ms
+13  be3093.ccr22.mrs01.atlas.cogentco.com (130.117.50.166) [AS174]  195.020 ms mei-b1-link.telia.net (62.115.124.217) [AS1299]  191.553 ms
+14  149.14.124.114 (149.14.124.114) [*]  183.587 ms 149.14.124.122 (149.14.124.122) [*]  203.881 ms
+15  po104.psw02.mrs1.tfbnw.net (204.15.23.13) [AS32934/AS10753]  183.941 ms po104.psw03.mrs1.tfbnw.net (204.15.23.15) [AS32934/AS10753]  182.320 ms
+16  173.252.67.71 (173.252.67.71) [AS32934]  183.788 ms 173.252.67.123 (173.252.67.123) [AS32934]  181.670 ms

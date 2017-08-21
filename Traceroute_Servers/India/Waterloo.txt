@@ -1,0 +1,24 @@
+Tracing route to wms.uwaterloo.ca [129.97.208.23]
+over a maximum of 30 hops:
+
+  1    13 ms     8 ms     2 ms  10.192.32.1
+  2     3 ms     2 ms     6 ms  10.254.234.1
+  3    12 ms     1 ms     1 ms  10.255.1.10
+  4     7 ms    11 ms     2 ms  10.119.233.65
+  5    34 ms    34 ms    35 ms  10.1.207.65
+  6    28 ms    28 ms    28 ms  10.1.200.137
+  7    49 ms    42 ms    59 ms  10.255.238.254
+  8   200 ms    64 ms    71 ms  180.149.48.18
+  9   165 ms   177 ms   184 ms  180.149.48.2
+ 10   243 ms   246 ms   243 ms  180.149.48.13
+ 11   256 ms   265 ms   255 ms  mtrl2rtr1.canarie.ca [205.189.32.94]
+ 12   261 ms   261 ms   264 ms  be204.pe01-otwa.orion.on.ca [205.189.32.229]
+ 13   267 ms   266 ms   272 ms  be107.p01-toro.orion.on.ca [66.97.16.53]
+ 14   261 ms   261 ms   261 ms  be1.p01-york.orion.on.ca [66.97.16.2]
+ 15   268 ms   268 ms   271 ms  be119.pe01-wtlo.orion.on.ca [66.97.16.110]
+ 16   264 ms   262 ms   264 ms  66.97.28.66
+ 17     *        *        *     Request timed out.
+ 18     *        *        *     Request timed out.
+ 19     *        *        *     Request timed out.
+ 20     *        *        *     Request timed out.
+ 21   261 ms   263 ms   272 ms  wms.uwaterloo.ca [129.97.208.23]

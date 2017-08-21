@@ -1,0 +1,14 @@
+traceroute to 129.132.19.216 (129.132.19.216), 30 hops max, 60 byte packets
+ 1  ge1.fw-hetzner-samrand.truteq.com (129.232.158.150) [AS37153]  0.171 ms  0.140 ms
+ 2  gw.hsr.truteq.com (129.232.159.193) [AS37153]  1.367 ms  1.354 ms
+ 3  core-access-switch1-v4001.jnb1.host-h.net (197.189.193.33) [AS37153]  0.771 ms  6.041 ms
+ 4  core-router2.jnb1.host-h.net (197.189.193.3) [AS37153]  0.328 ms  0.317 ms
+ 5  41-66-132-245-f5.customer.xe-0-0-2-gp-sm-dce-2.africainx.net (41.66.132.245) [AS37179]  0.379 ms  0.366 ms
+ 6  core.xe-0-0-3-gp-id-mec-1.za.africainx.net (41.84.12.190) [AS29606]  1.632 ms  1.621 ms
+ 7  core.xe-0-0-0-nl-am-eqx-dce-2.nl.africainx.net (41.84.13.11) [AS29606]  182.290 ms  182.280 ms
+ 8  swiCE3-10GE-4-1.switch.ch (80.249.208.33) [AS1200]  197.919 ms  197.906 ms
+ 9  swiCE1-B3.switch.ch (130.59.38.81) [AS559]  198.316 ms  198.429 ms
+10  swiZH1-100GE-0-1-0-1.switch.ch (130.59.36.94) [AS559]  193.524 ms  193.438 ms
+11  swiEZ3-100GE-0-1-0-4.switch.ch (130.59.38.109) [AS559]  195.368 ms  195.323 ms
+12  rou-gw-lee-tengig-to-switch.ethz.ch (192.33.92.1) [AS559]  195.320 ms  195.475 ms
+13  rou-fw-rz-rz-gw.ethz.ch (192.33.92.169) [AS559]  195.400 ms  195.518 ms

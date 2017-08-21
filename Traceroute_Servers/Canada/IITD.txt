@@ -1,0 +1,16 @@
+traceroute to 103.27.9.20 (103.27.9.20) from 216.234.191.172, 30 hops max, 40 byte packets
+ 1  cat6509-vlan2.edm.tera-byte.com (216.234.161.1)  0.390 ms
+ 2  *
+ 3  tcore3-edmonton_be1.net.bell.ca (64.230.119.232)  41.878 ms
+ 4  tcore3-vancouver_tengige0-15-0-5.net.bell.ca (64.230.77.13)  37.475 ms
+ 5  tcore4-seattle_hundredgige0-9-0-0.net.bell.ca (64.230.79.98)  38.983 ms
+ 6  bx2-paloalto_xe7-0-0_0.net.bell.ca (64.230.186.54)  35.027 ms
+ 7  XCR1.PAL.CW.net (198.32.176.120)  36.928 ms
+ 8  ae1-xcr2.nyk.cw.net (195.2.30.38)  152.852 ms
+ 9  ae0-xcr1.nyh.cw.net (195.2.25.70)  147.049 ms
+10  ae3-xcr1.slo.cw.net (195.2.28.170)  146.047 ms
+11  ae5-xcr1.lsh.cw.net (195.2.24.70)  146.799 ms
+12  ae32-xcr1.lns.cw.net (195.2.24.126)  147.734 ms
+13  vodafoneindia-gw-xcr1.lns.cw.net (195.59.77.70)  149.832 ms
+14  182.19.106.198 (182.19.106.198)  284.310 ms
+15  118.185.105.13 (118.185.105.13)  262.015 ms

@@ -1,0 +1,8 @@
+Tracing route to 103.27.9.20 over a maximum of 30 hops
+
+  1    10 ms     2 ms     3 ms  10.192.32.1
+  2     9 ms     1 ms     1 ms  10.254.234.5
+  3     *        *        *     Request timed out.
+  4     *        *        *     Request timed out.
+  5     *        *        *     Request timed out.
+  6     8 ms     3 ms     5 ms  103.27.9.20

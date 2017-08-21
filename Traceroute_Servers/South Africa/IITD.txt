@@ -1,0 +1,16 @@
+traceroute to 103.27.9.20 (103.27.9.20), 30 hops max, 60 byte packets
+ 1  ge1.fw-hetzner-samrand.truteq.com (129.232.158.150) [AS37153]  0.180 ms  0.151 ms
+ 2  gw.hsr.truteq.com (129.232.159.193) [AS37153]  2.722 ms  2.749 ms
+ 3  core-access-switch1-v4001.jnb1.host-h.net (197.189.193.33) [AS37153]  4.623 ms  4.502 ms
+ 4  core-router2.jnb1.host-h.net (197.189.193.3) [AS37153]  0.386 ms  0.372 ms
+ 5  41-66-132-245-f5.customer.xe-0-0-2-gp-sm-dce-2.africainx.net (41.66.132.245) [AS37179]  0.355 ms  0.338 ms
+ 6  core.xe-0-0-3-gp-id-mec-1.za.africainx.net (41.84.12.190) [AS29606]  1.655 ms  1.657 ms
+ 7  core.xe-1-2-0-gb-ld-te-dce-1.gb.africainx.net (41.84.12.128) [AS29606]  167.577 ms  167.563 ms
+ 8  40ge1-3.core1.lon2.he.net (195.66.224.21) [AS10026/AS4637]  166.534 ms  166.524 ms
+ 9  100ge5-1.core1.par2.he.net (184.105.223.254) [AS46841]  211.164 ms  211.267 ms
+10  flag-as-as15412.10gigabitethernet7-13.core1.par2.he.net (216.66.89.214) [AS6939]  175.739 ms  175.694 ms
+11  85.95.27.185 (85.95.27.185) [AS15412]  175.900 ms  175.890 ms
+12  xe-8-1-1.0.pjr03.mmb004.flagtel.com (85.95.25.113) [AS15412]  320.604 ms xe-2-0-0.0.pjr03.mmb004.flagtel.com (85.95.26.201) [AS15412]  312.847 ms
+13  * *
+14  * *
+15  124.124.195.101 (124.124.195.101) [AS18101]  316.556 ms  317.769 ms

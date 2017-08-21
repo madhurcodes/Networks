@@ -1,0 +1,14 @@
+traceroute to 31.13.75.36 (31.13.75.36), 30 hops max, 140 byte packets
+ 1  gw-pinger.unesp.br (200.145.255.42)  0.548 ms  0.720 ms  0.856 ms
+ 2  dc-bf.net.unesp.br (200.145.255.45)  0.665 ms  0.809 ms  1.002 ms
+ 3  asr-rt.net.unesp.br (200.145.0.254)  29.663 ms  29.670 ms  30.832 ms
+ 4  200-136-41-45.ansp.br (200.136.41.45)  1.146 ms  2.280 ms  2.377 ms
+ 5  198.32.252.141 (198.32.252.141)  108.859 ms  108.896 ms  108.893 ms
+ 6  xe0-0-2-541.miami15.mia.seabone.net (195.22.199.209)  108.989 ms  108.967 ms  109.055 ms
+ 7  mai-b1-link.telia.net (80.239.193.161)  109.572 ms  109.418 ms  109.650 ms
+ 8  ash-bb3-link.telia.net (62.115.143.66)  135.172 ms ash-bb3-link.telia.net (62.115.137.242)  134.702 ms ash-bb3-link.telia.net (62.115.141.70)  134.058 ms
+ 9  prs-bb3-link.telia.net (80.91.252.37)  232.903 ms prs-bb3-link.telia.net (62.115.124.133)  228.571 ms prs-bb2-link.telia.net (62.115.135.117)  218.140 ms
+10  mei-b1-link.telia.net (62.115.124.73)  234.651 ms mei-b1-link.telia.net (62.115.122.201)  229.512 ms mei-b1-link.telia.net (80.91.248.153)  229.509 ms
+11  edgenetwork-ic-311812-mei-b1.c.telia.net (62.115.12.134)  233.054 ms  230.680 ms  237.523 ms
+12  po104.psw03.mrs1.tfbnw.net (204.15.23.15)  233.934 ms  226.026 ms po104.psw01.mrs1.tfbnw.net (204.15.22.199)  238.532 ms
+13  173.252.67.67 (173.252.67.67)  235.501 ms 173.252.67.13 (173.252.67.13)  228.318 ms 173.252.67.165 (173.252.67.165)  235.459 ms

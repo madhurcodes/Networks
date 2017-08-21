@@ -1,0 +1,13 @@
+traceroute to 31.13.75.36 (31.13.75.36), 30 hops max, 60 byte packets
+ 1  gw.for.51.vlan.via.ncc-8.macomnet.net (195.128.76.225)  0.322 ms  0.228 ms  0.235 ms
+ 2  msk05.transtelecom.net (217.150.43.70)  1.768 ms  1.783 ms  1.719 ms
+ 3  149.6.168.202 (149.6.168.202)  20.555 ms  20.734 ms  20.427 ms
+ 4  be4027.ccr21.sto01.atlas.cogentco.com (149.6.168.201)  19.198 ms  19.266 ms  19.294 ms
+ 5  be2396.ccr21.sto03.atlas.cogentco.com (130.117.50.121)  26.204 ms be2397.ccr22.sto03.atlas.cogentco.com (130.117.50.129)  23.258 ms  24.601 ms
+ 6  be2282.ccr42.ham01.atlas.cogentco.com (154.54.72.105)  44.305 ms  42.610 ms  46.124 ms
+ 7  be2816.ccr42.ams03.atlas.cogentco.com (154.54.38.209)  46.084 ms  45.945 ms  47.831 ms
+ 8  be12266.ccr42.par01.atlas.cogentco.com (154.54.56.174)  50.134 ms  53.714 ms be12265.ccr41.par01.atlas.cogentco.com (130.117.2.142)  51.547 ms
+ 9  be3092.ccr21.mrs01.atlas.cogentco.com (130.117.49.154)  67.977 ms  67.874 ms be3093.ccr22.mrs01.atlas.cogentco.com (130.117.50.166)  63.291 ms
+10  149.14.124.114 (149.14.124.114)  60.964 ms 149.14.124.122 (149.14.124.122)  59.990 ms  65.507 ms
+11  po104.psw01.mrs1.tfbnw.net (204.15.22.199)  64.548 ms po103.psw01.mrs1.tfbnw.net (74.119.76.77)  64.276 ms po103.psw03.mrs1.tfbnw.net (74.119.77.213)  66.425 ms
+12  173.252.67.167 (173.252.67.167)  65.041 ms 173.252.67.69 (173.252.67.69)  65.075 ms 173.252.67.15 (173.252.67.15)  65.649 ms

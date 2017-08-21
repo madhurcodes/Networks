@@ -1,0 +1,22 @@
+traceroute to 137.158.158.44 (137.158.158.44) from 216.234.191.172, 30 hops max, 40 byte packets
+ 1  cat6509-vlan2.edm.tera-byte.com (216.234.161.1)  0.399 ms
+ 2  *
+ 3  tcore4-edmonton_bundle-ether1.net.bell.ca (64.230.119.234)  22.099 ms
+ 4  tcore3-vancouver_tengige0-15-0-5.net.bell.ca (64.230.77.13)  20.993 ms
+ 5  tcore4-seattle_hundredgige0-5-0-0.net.bell.ca (64.230.79.94)  21.134 ms
+ 6  bx4-seattle_ae3.net.bell.ca (64.230.125.233)  18.339 ms
+ 7  be4331.ccr21.sea02.atlas.cogentco.com (38.104.126.81)  18.358 ms
+ 8  be2085.ccr21.slc01.atlas.cogentco.com (154.54.2.198)  38.628 ms
+ 9  be3038.ccr22.den01.atlas.cogentco.com (154.54.42.98)  53.315 ms
+10  be3036.ccr22.mci01.atlas.cogentco.com (154.54.31.90)  53.598 ms
+11  be2831.ccr41.ord01.atlas.cogentco.com (154.54.42.166)  59.317 ms
+12  be2717.ccr21.cle04.atlas.cogentco.com (154.54.6.222)  67.174 ms
+13  be2879.ccr22.alb02.atlas.cogentco.com (154.54.29.174)  78.084 ms
+14  be2299.ccr31.bos01.atlas.cogentco.com (154.54.43.9)  75.718 ms
+15  be2983.ccr42.lon13.atlas.cogentco.com (154.54.1.177)  138.162 ms
+16  be2871.ccr21.lon01.atlas.cogentco.com (154.54.58.186)  138.551 ms
+17  be2867.rcr21.b015533-1.lon01.atlas.cogentco.com (154.54.56.242)  138.262 ms
+18  149.14.80.210 (149.14.80.210)  137.418 ms
+19  ae1-1001-cpt1-ir1-i.tenet.ac.za (196.32.209.170)  284.252 ms
+20  155.232.64.69 (155.232.64.69)  278.328 ms
+21  155.232.32.14 (155.232.32.14)  285.729 ms

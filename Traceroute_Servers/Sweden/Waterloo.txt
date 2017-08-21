@@ -1,0 +1,17 @@
+traceroute to 129.97.208.23 (129.97.208.23), 30 hops max, 60 byte packets
+ 1  gw.for.51.vlan.via.ncc-8.macomnet.net (195.128.76.225)  0.325 ms  0.246 ms  0.256 ms
+ 2  msk05.transtelecom.net (217.150.43.70)  2.452 ms  2.620 ms  2.607 ms
+ 3  149.6.168.202 (149.6.168.202)  20.627 ms  20.620 ms  20.542 ms
+ 4  be4027.ccr21.sto01.atlas.cogentco.com (149.6.168.201)  20.680 ms  20.560 ms  20.784 ms
+ 5  be2397.ccr22.sto03.atlas.cogentco.com (130.117.50.129)  23.080 ms  23.045 ms  23.119 ms
+ 6  be2282.ccr42.ham01.atlas.cogentco.com (154.54.72.105)  42.348 ms  46.116 ms  42.227 ms
+ 7  be2816.ccr42.ams03.atlas.cogentco.com (154.54.38.209)  48.169 ms  49.364 ms  44.220 ms
+ 8  be2183.ccr22.lpl01.atlas.cogentco.com (154.54.58.69)  59.904 ms  64.946 ms  61.630 ms
+ 9  be3043.ccr22.ymq01.atlas.cogentco.com (154.54.44.166)  127.797 ms  126.445 ms  127.868 ms
+10  be3260.ccr22.yyz02.atlas.cogentco.com (154.54.42.89)  135.809 ms  131.055 ms  130.702 ms
+11  university_of_waterloo.demarc.cogentco.com (38.99.202.214)  143.870 ms  139.926 ms  140.168 ms
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  wms.uwaterloo.ca (129.97.208.23)  143.043 ms  138.063 ms  142.355 ms

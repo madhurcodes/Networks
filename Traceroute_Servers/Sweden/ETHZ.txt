@@ -1,0 +1,10 @@
+traceroute to 129.132.19.216 (129.132.19.216), 30 hops max, 60 byte packets
+ 1  gw.for.51.vlan.via.ncc-8.macomnet.net (195.128.76.225)  0.265 ms  0.243 ms  0.239 ms
+ 2  msk05.transtelecom.net (217.150.43.70)  1.810 ms  1.969 ms  2.159 ms
+ 3  80.249.210.177 (80.249.210.177)  70.266 ms  70.206 ms  70.196 ms
+ 4  swiCE3-10GE-4-1.switch.ch (80.249.208.33)  67.581 ms  67.827 ms  67.604 ms
+ 5  swiCE1-B3.switch.ch (130.59.38.81)  61.786 ms  61.845 ms  61.641 ms
+ 6  swiZH1-100GE-0-1-0-1.switch.ch (130.59.36.94)  57.216 ms  57.827 ms  57.238 ms
+ 7  swiEZ3-100GE-0-1-0-4.switch.ch (130.59.38.109)  58.248 ms  58.059 ms  57.980 ms
+ 8  rou-gw-lee-tengig-to-switch.ethz.ch (192.33.92.1)  57.370 ms  57.721 ms  57.905 ms
+ 9  rou-fw-rz-rz-gw.ethz.ch (192.33.92.169)  64.987 ms  64.619 ms  64.773 ms

@@ -1,0 +1,13 @@
+traceroute to 31.13.75.36 (31.13.75.36) from 216.234.191.172, 30 hops max, 40 byte packets
+ 1  cat6509-vlan2.edm.tera-byte.com (216.234.161.1)  0.394 ms
+ 2  *
+ 3  edtnabkdgr01.bb.telus.com (205.233.111.108)  0.951 ms
+ 4  154.11.12.201 (154.11.12.201)  26.384 ms
+ 5  sea-b2-link.telia.net (213.248.74.220)  53.491 ms
+ 6  chi-b21-link.telia.net (62.115.116.141)  53.850 ms
+ 7  nyk-bb3-link.telia.net (62.115.137.30)  75.473 ms
+ 8  prs-bb3-link.telia.net (62.115.124.113)  166.544 ms
+ 9  mei-b1-link.telia.net (62.115.122.201)  159.396 ms
+10  edgenetwork-ic-311812-mei-b1.c.telia.net (62.115.12.134)  172.049 ms
+11  po104.psw03.mrs1.tfbnw.net (204.15.23.15)  157.156 ms
+12  173.252.67.125 (173.252.67.125)  163.105 ms

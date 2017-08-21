@@ -1,0 +1,25 @@
+traceroute to 129.97.208.23 (129.97.208.23), 30 hops max, 60 byte packets
+ 1  ge1.fw-hetzner-samrand.truteq.com (129.232.158.150) [AS37153]  0.175 ms  0.143 ms
+ 2  gw.hsr.truteq.com (129.232.159.193) [AS37153]  2.370 ms  2.361 ms
+ 3  core-access-switch1-v4001.jnb1.host-h.net (197.189.193.33) [AS37153]  0.898 ms  0.880 ms
+ 4  core-router2.jnb1.host-h.net (197.189.193.3) [AS37153]  0.349 ms  0.336 ms
+ 5  41-66-132-245-f5.customer.xe-0-0-2-gp-sm-dce-2.africainx.net (41.66.132.245) [AS37179]  0.407 ms  0.398 ms
+ 6  core.xe-0-0-3-gp-id-mec-1.za.africainx.net (41.84.12.190) [AS29606]  1.662 ms  1.653 ms
+ 7  core.xe-1-1-0-nl-am-eqx-dce-1.nl.africainx.net (41.84.12.50) [AS29606]  182.217 ms  182.296 ms
+ 8  176.56.179.139 (176.56.179.139) [AS41095]  182.616 ms  182.693 ms
+ 9  2-2.r1.1p19b.t2.lnd.uk.iptp.net (91.194.117.139) [AS41095]  188.271 ms  188.315 ms
+10  ge-2-1-0.mpr1.lhr2.uk.above.net (195.66.224.76) [AS10026/AS4637]  178.217 ms  178.217 ms
+11  ae11.mpr2.lhr2.uk.zip.zayo.com (64.125.30.52) [*]  178.281 ms  178.265 ms
+12  ae27.cs1.lhr11.uk.eth.zayo.com (64.125.30.236) [*]  255.553 ms  255.531 ms
+13  ae5.cs1.lga5.us.eth.zayo.com (64.125.29.126) [*]  256.844 ms  256.825 ms
+14  ae27.cr1.lga5.us.zip.zayo.com (64.125.30.251) [*]  255.548 ms  255.566 ms
+15  ae10.mpr3.lga7.us.zip.zayo.com (64.125.20.77) [*]  256.020 ms  256.095 ms
+16  fe6-6.gwy1-van.bb.allstream.net (216.191.65.133) [AS15290]  261.906 ms  261.891 ms
+17  10ge4-11.hcap9-tor.bb.allstream.net (199.212.169.202) [AS852]  270.933 ms  271.075 ms
+18  10ge4-11.hcap9-tor.bb.allstream.net (199.212.169.202) [AS852]  270.949 ms  270.978 ms
+19  216.191.167.38 (216.191.167.38) [AS15290]  270.507 ms  270.830 ms
+20  * *
+21  * *
+22  * *
+23  * *
+24  wms.uwaterloo.ca (129.97.208.23) [AS19752/AS549/AS12093]  271.239 ms  271.318 ms

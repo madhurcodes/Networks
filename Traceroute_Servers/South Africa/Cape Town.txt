@@ -1,0 +1,11 @@
+traceroute to 137.158.158.44 (137.158.158.44), 30 hops max, 60 byte packets
+ 1  ge1.fw-hetzner-samrand.truteq.com (129.232.158.150) [AS37153]  0.136 ms  0.116 ms
+ 2  gw.hsr.truteq.com (129.232.159.193) [AS37153]  1.492 ms  1.497 ms
+ 3  core-access-switch1-v4001.jnb1.host-h.net (197.189.193.33) [AS37153]  3.492 ms  3.474 ms
+ 4  core-router2.jnb1.host-h.net (197.189.193.3) [AS37153]  0.325 ms  0.322 ms
+ 5  tenet.jinx.net.za (196.223.14.33) [*]  1.910 ms  1.910 ms
+ 6  155.232.129.14 (155.232.129.14) [AS2018]  2.052 ms  2.049 ms
+ 7  * *
+ 8  * *
+ 9  155.232.64.73 (155.232.64.73) [AS2018]  18.598 ms  18.573 ms
+10  155.232.27.78 (155.232.27.78) [AS2018]  18.943 ms  18.898 ms

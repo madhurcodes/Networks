@@ -1,0 +1,17 @@
+traceroute to 129.132.19.216 (129.132.19.216), 30 hops max, 140 byte packets
+ 1  gw-pinger.unesp.br (200.145.255.42)  0.618 ms  0.705 ms  0.950 ms
+ 2  dc-bf.net.unesp.br (200.145.255.45)  0.670 ms  0.770 ms  0.901 ms
+ 3  asr-rt.net.unesp.br (200.145.0.254)  52.721 ms  52.739 ms  52.730 ms
+ 4  200-136-41-45.ansp.br (200.136.41.45)  1.022 ms  1.155 ms  1.295 ms
+ 5  198.32.252.229 (198.32.252.229)  182.938 ms  182.970 ms  182.956 ms
+ 6  xe-1-0-0-1802.j480.ampath.net (190.103.185.145)  272.298 ms  272.617 ms  272.076 ms
+ 7  et-11-1-0.4072.rtsw.wash.net.internet2.edu (198.71.45.7)  282.703 ms  282.751 ms  282.723 ms
+ 8  internet2.mx1.lon.uk.geant.net (62.40.124.44)  352.889 ms  352.934 ms  352.907 ms
+ 9  ae0.mx1.lon2.uk.geant.net (62.40.98.79)  353.598 ms  352.334 ms  352.336 ms
+10  ae0.mx1.par.fr.geant.net (62.40.98.77)  357.889 ms  366.724 ms  366.715 ms
+11  ae2.mx1.gen.ch.geant.net (62.40.98.153)  374.432 ms  374.613 ms  374.596 ms
+12  swice1-100ge-0-3-0-1.switch.ch (62.40.124.22)  385.119 ms  385.612 ms  385.093 ms
+13  swiZH1-100GE-0-1-0-1.switch.ch (130.59.36.94)  378.200 ms  378.300 ms  378.288 ms
+14  swiEZ3-100GE-0-1-0-4.switch.ch (130.59.38.109)  378.271 ms  378.357 ms  378.321 ms
+15  rou-gw-lee-tengig-to-switch.ethz.ch (192.33.92.1)  378.276 ms  378.517 ms  354.763 ms
+16  rou-fw-rz-rz-gw.ethz.ch (192.33.92.169)  354.945 ms  352.449 ms  353.006 ms

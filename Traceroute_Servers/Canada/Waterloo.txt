@@ -1,0 +1,15 @@
+traceroute to 129.97.208.23 (129.97.208.23) from 216.234.191.172, 30 hops max, 40 byte packets
+ 1  cat6509-vlan2.edm.tera-byte.com (216.234.161.1)  0.421 ms
+ 2  *
+ 3  tcore4-edmonton_bundle-ether1.net.bell.ca (64.230.119.234)  17.153 ms
+ 4  tcore3-vancouver_tengige0-15-0-5.net.bell.ca (64.230.77.13)  18.750 ms
+ 5  bx2-vancouver_et7-1-0.net.bell.ca (64.230.123.35)  15.693 ms
+ 6  allstream-peering.net.bell.ca (64.230.183.90)  15.702 ms
+ 7  10ge4-11.hcap9-tor.bb.allstream.net (199.212.169.202)  54.050 ms
+ 8  10ge4-11.hcap9-tor.bb.allstream.net (199.212.169.202)  53.849 ms
+ 9  216.191.167.38 (216.191.167.38)  55.511 ms
+10  *
+11  *
+12  *
+13  *
+14  wms.uwaterloo.ca (129.97.208.23)  55.579 ms
