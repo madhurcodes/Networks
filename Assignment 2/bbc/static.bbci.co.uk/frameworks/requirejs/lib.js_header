@@ -1,0 +1,11 @@
+HTTP/1.0 200 OK
+Expires: Wed, 20 Sep 2017 18:17:52 GMT
+Last-Modified: Fri, 09 Sep 2016 08:25:54 GMT
+ETag: "4d1a-53c0ee5132880"
+Cache-Control: max-age=1800
+Server: Apache/2.2.25 (Unix)
+Content-Type: application/javascript
+Access-Control-Allow-Origin: *
+Date: Wed, 20 Sep 2017 18:13:46 GMT
+Content-Length: 19738
+Connection: close

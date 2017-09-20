@@ -1,0 +1,12 @@
+HTTP/1.0 200 OK
+Expires: Sat, 24 Feb 2018 06:55:10 GMT
+Last-Modified: Wed, 19 Mar 2014 15:02:55 GMT
+ETag: "371-4f4f6f28865c0"
+Cache-Control: max-age=31536000
+Server: Apache/2.2.25 (Unix)
+Accept-Ranges: bytes
+Content-Length: 881
+Access-Control-Allow-Origin: *
+Content-Type: image/gif
+Date: Wed, 20 Sep 2017 18:13:49 GMT
+Connection: close

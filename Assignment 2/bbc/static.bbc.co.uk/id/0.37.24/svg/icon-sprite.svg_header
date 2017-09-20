@@ -1,0 +1,12 @@
+HTTP/1.0 200 OK
+Server: Apache/2.2.25 (Unix)
+Cache-Control: max-age=31536000
+Content-Type: image/svg+xml
+Expires: Tue, 08 May 2018 09:24:06 GMT
+Access-Control-Allow-Origin: *
+ETag: "989-54e9fa8e68700"
+Last-Modified: Wed, 03 May 2017 14:42:04 GMT
+Access-Control-Allow-Headers: X-Requested-With, X-Transclude
+Date: Wed, 20 Sep 2017 18:13:51 GMT
+Content-Length: 2441
+Connection: close

@@ -1,0 +1,13 @@
+HTTP/1.0 200 OK
+Server: Apache/2.2.25 (Unix)
+Last-Modified: Wed, 19 Jul 2017 10:48:17 GMT
+ETag: "a4c-554a95e9b5e40"
+Accept-Ranges: bytes
+Content-Length: 2636
+Cache-Control: max-age=31536000
+Expires: Tue, 24 Jul 2018 08:46:06 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: X-Requested-With, X-Transclude
+Content-Type: application/x-font-woff
+Date: Wed, 20 Sep 2017 18:13:49 GMT
+Connection: close

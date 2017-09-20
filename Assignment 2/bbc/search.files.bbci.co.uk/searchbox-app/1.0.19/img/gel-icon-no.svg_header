@@ -1,0 +1,17 @@
+HTTP/1.0 200 OK
+x-amz-id-2: gu5vhlinn3Qv/ya+TbLJxM6OsqOmi8BGVW+LpvSbpHVrDC7BfHmXTlxk+aIycuUYbsyIcFuJq8g=
+x-amz-request-id: 5CBB3FF0C8AB0634
+Last-Modified: Wed, 13 Sep 2017 13:40:03 GMT
+ETag: "8d04075b1d6b7e844c527d70e9274f3e"
+Cache-Control: max-age=31536000, s-max-age=31536000, no-transform, public
+Accept-Ranges: bytes
+Content-Type: image/svg+xml
+Content-Length: 203
+Server: AmazonS3
+Date: Wed, 20 Sep 2017 18:13:53 GMT
+Connection: close
+Access-Control-Max-Age: 300
+Access-Control-Allow-Credentials: false
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Methods: HEAD,GET
+Access-Control-Allow-Origin: *

@@ -1,0 +1,12 @@
+HTTP/1.0 200 OK
+Server: Apache/2.2.25 (Unix)
+Last-Modified: Tue, 05 Sep 2017 17:00:04 GMT
+ETag: "2da-5587428972d00"
+Accept-Ranges: bytes
+Content-Length: 730
+Cache-Control: max-age=31536000
+Expires: Tue, 11 Sep 2018 08:15:38 GMT
+Access-Control-Allow-Origin: *
+Content-Type: image/png
+Date: Wed, 20 Sep 2017 18:13:47 GMT
+Connection: close

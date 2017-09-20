@@ -1,0 +1,15 @@
+HTTP/1.0 200 OK
+Server: Apache/2.2.25 (Unix) mod_ssl/2.2.25 OpenSSL/1.0.1e-fips mod_perl/2.0.4 Perl/v5.10.1
+Last-Modified: Fri, 15 Sep 2017 10:51:20 GMT
+x-amz-id-2: dasQHEjoqdqf/yOZc0rkJbjRcrRLmt5Ct/zvyuvOSYYQK2jDnsnp1V8ofwmQ7m5w9WbDM0y8VeM=
+x-amz-request-id: 38A9459838E65B3D
+ETag: "26e3fbda28ab9e7154ae35fb4e470bec"
+Cache-Control: max-age=31536000, max-age=31536000
+x-amz-version-id: qHtyNZbVs2k0FjiihIYU8tHGoJunYp2D
+Accept-Ranges: bytes
+Content-Length: 5768
+Expires: Sat, 15 Sep 2018 11:49:14 GMT
+Access-Control-Allow-Origin: *
+Content-Type: image/jpeg
+Date: Wed, 20 Sep 2017 18:13:50 GMT
+Connection: close

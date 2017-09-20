@@ -1,0 +1,13 @@
+HTTP/1.0 200 OK
+Server: AmazonS3
+x-amz-id-2: /i20B9zHYZZVPLwNwyX8KT4alUoFiF3KvvoZRGiwNGpGNYCtl5koPiBaD4AMlyUcy7NgbRQezCc=
+x-amz-request-id: 741735C20367B3B0
+Last-Modified: Wed, 20 Sep 2017 05:53:06 GMT
+ETag: "d54c027ccf236e40220a7b91a1e4b94e"
+Accept-Ranges: bytes
+Content-Type: image/jpeg
+Cache-Control: max-age=86400
+Expires: Thu, 21 Sep 2017 05:55:17 GMT
+Content-Length: 3410
+Date: Wed, 20 Sep 2017 18:13:47 GMT
+Connection: close
