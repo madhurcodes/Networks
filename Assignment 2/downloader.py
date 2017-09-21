@@ -4,6 +4,7 @@ import base64
 import time
 import os
 import threading
+
 debug = 1
 if not debug:
     while 1:
@@ -12,8 +13,9 @@ if not debug:
             numObjectsPerThread = int(input("Enter the number of Objects Per Thread: "))
             harfile_name = input("Enter the HAR File Name: ")
             harfile = open(harfile_name,"r")
-            pipe = int(input("Enter 1 for Pipelined Execution and 0 for not: "))
-            PIPELINED = True if pipe ==1 else False
+            # pipe = int(input("Enter 1 for Pipelined Execution and 0 for not: "))
+            pipe = 0
+            PIPELINED = False if pipe ==1 else False
             break
         except:
             print("Invalid input. Please try again.")
@@ -21,6 +23,7 @@ else:
     numThreadsPerDomain = 3
     numObjectsPerThread = 2
     harfile_name = "bbc.har"
+    harfile = open(harfile_name,"r")
     PIPELINED = False
 
 foldername = harfile_name.split(".")[0]
@@ -41,13 +44,6 @@ def fetch_thread(request_small):
             content_file_path = foldername
             content_file_path = content_file_path + "/" + url_split[-1]
             if 1==1:#int(i["response"]["content"]["size"])!=0:
-                if content_file_path[-1]=="/":
-                    content_file_path = content_file_path + "index.html"
-                if not os.path.exists(os.path.dirname(content_file_path)):
-                    try:
-                        os.makedirs(os.path.dirname(content_file_path))
-                    except: # Guard against race condition
-                        print("Error :Race")
                 har_req = i["request"]
                 http_version = "HTTP" + har_req["httpVersion"][4:]
                 request_str= har_req["method"] + " /" + har_req["url"].split("//")[1].split("/",maxsplit=1)[-1]+" "+ http_version + "\n" 
@@ -66,7 +62,7 @@ def fetch_thread(request_small):
                 client_socket.connect((hostname, 80))
                 client_socket.send(encoded_request)
                 received_bytes = b""
-                client_socket.settimeout(0.15)
+                client_socket.settimeout(0.2)
                 while 1:
                     try:
                         msg = client_socket.recv(1024)
@@ -75,14 +71,29 @@ def fetch_thread(request_small):
                         received_bytes = received_bytes + msg
                     except:
                         break
-
-                header = received_bytes.split(b"\r\n\r\n")[0]
+                split = received_bytes.split(b"\r\n\r\n")
+                if len(received_bytes)<1 or len(split)<2:
+                    continue
+                header = split[0]
                 client_socket.close()
-                content = received_bytes.split(b"\r\n\r\n")[-1]
-                headerfile = open(content_file_path+"_header","wb")
+                content = split[1]
+                if content_file_path[-1]=="/":
+                    content_file_path = content_file_path + "index.html"
+                if not os.path.exists(os.path.dirname(content_file_path)):
+                    try:
+                        os.makedirs(os.path.dirname(content_file_path))
+                    except: # Guard against race condition
+                        print("Error :Race")
+                try:
+                    headerfile = open(content_file_path+"_header","wb")
+                except:
+                    headerfile = open(content_file_path[:33]+"_header","wb")
                 headerfile.write(header)
                 headerfile.close()
-                contentfile = open(content_file_path,"wb")
+                try:
+                    contentfile = open(content_file_path,"wb")
+                except:
+                    contentfile = open(content_file_path[:33],"wb")
                 contentfile.write(content)
                 contentfile.close()
 #         else:

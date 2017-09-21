@@ -1,0 +1,17 @@
+HTTP/1.0 200 OK
+x-amz-id-2: d1NQFqDa9Ja88E76PIQp5wqS+Ja26h/aLYPca20BWglk8j+8DxF9caqE+ib86WQkCWuPsB01twg=
+x-amz-request-id: 6048716EE30D4D4D
+Last-Modified: Fri, 08 Sep 2017 12:50:25 GMT
+ETag: "ad65446ae571de78d21eb0eec266b78a"
+Cache-Control: max-age=31536000, no-transform, public
+Accept-Ranges: bytes
+Content-Type: application/javascript
+Content-Length: 2432
+Server: AmazonS3
+Date: Thu, 21 Sep 2017 10:02:07 GMT
+Connection: close
+Access-Control-Max-Age: 300
+Access-Control-Allow-Credentials: false
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Methods: HEAD,GET
+Access-Control-Allow-Origin: *

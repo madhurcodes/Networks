@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Accept-Ranges: none
+Vary: Accept-Encoding
+Content-Type: text/javascript
+Timing-Allow-Origin: *
+Date: Thu, 21 Sep 2017 10:02:07 GMT
+Expires: Thu, 21 Sep 2017 10:02:07 GMT
+Cache-Control: private, max-age=900, stale-while-revalidate=3600
+X-Content-Type-Options: nosniff
+Server: sffe
+X-XSS-Protection: 1; mode=block
+Transfer-Encoding: chunked
