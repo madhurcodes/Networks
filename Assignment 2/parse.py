@@ -56,14 +56,11 @@ for i in domain.keys():
         print (j, "-", i, "-", connectionNum[j], "-", connectionSize[j])
 print ("\n")   
 
-print ("Page load time obtained from onLoad entry :", parsed_json["log"]["pages"][0]["pageTimings"]["onLoad"])
-print ("\n")
-
-print ("Time spent in DNS query when opening the first TCP connection for each domain")
-print ("connection ID - domain - DNS query time")
+print ("Time spent in DNS query when opening the first TCP connection for each hostname")
+print ("connection ID - hostname - DNS query time")
 for i in range(len(parsed_json["log"]["entries"])):
     if "connection" in parsed_json["log"]["entries"][i] and parsed_json["log"]["entries"][i]["timings"]["dns"] != -1:
-        print (parsed_json["log"]["entries"][i]["connection"], "-", parsed_json["log"]["entries"][i]["request"]["url"].split("//")[1].split("/")[0].split(".", 1)[1], "-", parsed_json["log"]["entries"][i]["timings"]["dns"])
+        print (parsed_json["log"]["entries"][i]["connection"], "-", parsed_json["log"]["entries"][i]["request"]["url"].split("//")[1].split("/")[0], "-", parsed_json["log"]["entries"][i]["timings"]["dns"])
 print ("\n")
 
 print ("Timing analysis on each TCP connection")
@@ -108,7 +105,7 @@ for i in range(len(parsed_json["log"]["entries"])):
                     rcvTime[parsed_json["log"]["entries"][i]["connection"]] = parsed_json["log"]["entries"][j]["timings"]["receive"]
             
 print ("connection ID - connection establishment time - average waiting time - total receive time - average goodput - maximum achieved goodput")        
-for i in sorted(connect):
+for i in connect.keys():
     if rcvTime[i] == 0:
         print (i, "-", connect[i], "-", wait[i], "-", receive[i], "-", connectionSize[i] / receive[i], "-", 0.0)
     else:    
@@ -123,4 +120,54 @@ maxGoodput = 0
 for i in connect.keys():
     if rcvTime[i] != 0 and maxGoodput < maxSize[i] / rcvTime[i]:
         maxGoodput = maxSize[i] / rcvTime[i]
-print ("Maximum of the maximum achieved goodput (across all domains) :", maxGoodput)   
+print ("Maximum of the maximum achieved goodput (on all connections) :", maxGoodput, "\n")        
+
+print ("Page load time obtained from onLoad entry :", parsed_json["log"]["pages"][0]["pageTimings"]["onLoad"])
+pageLoadTime = {}
+for i in range(len(parsed_json["log"]["entries"])):
+    if "connection" in parsed_json["log"]["entries"][i]:
+        pageLoadTime[parsed_json["log"]["entries"][i]["connection"]] = 0
+for i in pageLoadTime.keys():
+    pageLoadTime[i] += connect[i]
+maxWaitTime = {}
+for i in range(len(parsed_json["log"]["entries"])):
+    if "connection" in parsed_json["log"]["entries"][i]:
+        maxWaitTime[parsed_json["log"]["entries"][i]["connection"]] = 0
+for i in range(len(parsed_json["log"]["entries"])):
+    if "connection" in parsed_json["log"]["entries"][i]:
+        if maxWaitTime[parsed_json["log"]["entries"][i]["connection"]] < parsed_json["log"]["entries"][i]["timings"]["wait"]:
+            maxWaitTime[parsed_json["log"]["entries"][i]["connection"]] = parsed_json["log"]["entries"][i]["timings"]["wait"] 
+for i in pageLoadTime.keys():
+    pageLoadTime[i] += maxWaitTime[i]
+sumSendTime = {}
+for i in range(len(parsed_json["log"]["entries"])):
+    if "connection" in parsed_json["log"]["entries"][i]:
+        sumSendTime[parsed_json["log"]["entries"][i]["connection"]] = 0
+for i in range(len(parsed_json["log"]["entries"])):
+    if "connection" in parsed_json["log"]["entries"][i]:
+        sumSendTime[parsed_json["log"]["entries"][i]["connection"]] += parsed_json["log"]["entries"][i]["timings"]["send"]
+for i in pageLoadTime.keys():
+    pageLoadTime[i] += sumSendTime[i]  
+for i in pageLoadTime.keys():
+    pageLoadTime[i] += receive[i]
+maxTime = 0
+for i in pageLoadTime.keys():
+    if maxTime < pageLoadTime[i]:
+        maxTime = pageLoadTime[i]
+maxDNSTime = 0
+for i in range(len(parsed_json["log"]["entries"])):
+    if maxDNSTime < parsed_json["log"]["entries"][i]["timings"]["dns"]:
+        maxDNSTime = parsed_json["log"]["entries"][i]["timings"]["dns"]
+maxTime += maxDNSTime
+print ("Best page load time obtained by collapsing all GET requests on each TCP connection and opening all connections simultaneously (in ms):", maxTime)
+for i in pageLoadTime.keys():
+    pageLoadTime[i] -= receive[i]
+for i in pageLoadTime.keys():
+    if maxSize[i] != 0 and rcvTime[i] != 0:
+        pageLoadTime[i] += connectionSize[i] / (maxSize[i] / rcvTime[i])
+maxTime = 0
+for i in pageLoadTime.keys():
+    if maxTime < pageLoadTime[i]:
+        maxTime = pageLoadTime[i]
+maxTime += maxDNSTime
+print ("Best page load time obtained by assuming that all content on a connection can be downloaded at the maximum achieved goodput (in ms):", maxTime)
