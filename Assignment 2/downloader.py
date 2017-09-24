@@ -5,7 +5,7 @@ import time
 import os
 import threading
 
-debug = 1
+debug = 0
 if not debug:
     while 1:
         try:
@@ -37,7 +37,9 @@ def fetch_thread(request_small):
 #             print(threading.current_thread().name, " Processed url ", i["request"]["url"])
             url = i["request"]["url"]
             prefix = url[0:5]
+            # print(url)
             if prefix != "http:":
+                print("skipped ", url)
                 continue
             url_split = url.split("://")
 
@@ -53,16 +55,16 @@ def fetch_thread(request_small):
                     if el["name"] not in ("User-Agent","Connection"):continue
                     request_str = request_str + el["name"]+": " + el["value"]+"\n"
                 request_str = request_str + "\n"
-        #         print("------------------------------")
-        #         print(request_str)
-        #         print("------------------------------")
+                    # print("------------------------------")
+                    # print(request_str)
+                    # print("------------------------------")
                 encoded_request = request_str.encode()
                 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
-                print("Hostname is ", hostname)
+            #   print("Hostname is ", hostname)
                 client_socket.connect((hostname, 80))
                 client_socket.send(encoded_request)
                 received_bytes = b""
-                client_socket.settimeout(0.2)
+                client_socket.settimeout(0.7)
                 while 1:
                     try:
                         msg = client_socket.recv(1024)
@@ -73,27 +75,31 @@ def fetch_thread(request_small):
                         break
                 split = received_bytes.split(b"\r\n\r\n")
                 if len(received_bytes)<1 or len(split)<2:
+                    # print("unsplit ", url, "byter r ", received_bytes)
                     continue
-                header = split[0]
                 client_socket.close()
-                content = split[1]
+                if(len(split[0])<8):
+                    header = split[1]
+                    content = split[2]
+                else:
+                    header = split[0]
+                    content = split[1]
+                # print("c is   "  ,foldername, " ",content_file_path)
                 if content_file_path[-1]=="/":
                     content_file_path = content_file_path + "index.html"
+                if len(content_file_path)>90:
+                    # print("Truncated a name")
+                    content_file_path = content_file_path[:90]
                 if not os.path.exists(os.path.dirname(content_file_path)):
                     try:
                         os.makedirs(os.path.dirname(content_file_path))
                     except: # Guard against race condition
-                        print("Error :Race")
-                try:
-                    headerfile = open(content_file_path+"_header","wb")
-                except:
-                    headerfile = open(content_file_path[:33]+"_header","wb")
+                        print("Error :Race")                
+                headerfile = open(content_file_path+"_header","wb")
                 headerfile.write(header)
                 headerfile.close()
-                try:
-                    contentfile = open(content_file_path,"wb")
-                except:
-                    contentfile = open(content_file_path[:33],"wb")
+                print("Processed ",content_file_path)
+                contentfile = open(content_file_path,"wb")
                 contentfile.write(content)
                 contentfile.close()
 #         else:
@@ -104,16 +110,10 @@ def dom_thread_fun(reqlist):
     done = 0
     tind = 0
     while len(reqlist) != done:
-        if len(tl) == numThreadsPerDomain:
-            while 1:
-                a = 0
-                for th in tl:
-                    if th.isAlive():
-                        a = 1
-                if a==1:
-                    continue
-                else:
-                    tl =[]
+        while len(tl) >= numThreadsPerDomain:
+            for th in tl:
+                if not th.isAlive():
+                    tl.remove(th)
                     break
         tempList = reqlist[done:min(done+numObjectsPerThread, len(reqlist))]
         done += len(tempList)
