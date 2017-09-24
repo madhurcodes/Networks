@@ -119,3 +119,8 @@ totalReceiveTime = 0
 for i in range(len(parsed_json["log"]["entries"])):
     totalReceiveTime += parsed_json["log"]["entries"][i]["timings"]["receive"]
 print ("Average achieved goodput of the network (across all domains) :", total_size / totalReceiveTime)    
+maxGoodput = 0
+for i in connect.keys():
+    if rcvTime[i] != 0 and maxGoodput < maxSize[i] / rcvTime[i]:
+        maxGoodput = maxSize[i] / rcvTime[i]
+print ("Maximum of the maximum achieved goodput (across all domains) :", maxGoodput)   
