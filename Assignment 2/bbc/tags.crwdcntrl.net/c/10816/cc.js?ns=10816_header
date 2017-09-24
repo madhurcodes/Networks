@@ -1,6 +1,0 @@
-HTTP/1.0 505 HTTP Version Not Supported
-Content-Type: text/html
-Content-Length: 379
-Connection: close
-Date: Thu, 21 Sep 2017 10:02:07 GMT
-Server: ECSF (sin/BF9B)
