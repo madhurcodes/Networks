@@ -1,0 +1,15 @@
+HAR File Parser
+
+Analyzes a HTTP Archive Record File and outputs various statistics calculated
+ as per the assignment specifications.
+
+Usage : python3 parser.py bbc.har
+
+HTTP Downloader
+
+Parses a HAR file to determine the requests in it, makes HTTP packets
+out of the requests and sends them to the desired servers over socket 
+connections to replicate the work of a web browser.
+Produces the files in a new folder with the headers in separate files.
+
+Usage: python3 downloader.py (asks for inputs automatically
